@@ -17,5 +17,6 @@ def get_input(file_name):
 
 if __name__ == '__main__':
     data = get_input(DATA_FILE)
-    for line in data:
+    for index, line in enumerate(data):
+        print(f'Case #{index}:')
         print(decorate(line))
